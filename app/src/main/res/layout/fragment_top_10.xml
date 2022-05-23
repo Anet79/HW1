@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GameActivity"
+   >
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:showDividers="middle|end|beginning"
+        android:divider="@color/button_color"
+        android:background="#fce4ec"
+        >
+
+
+        <TableRow
+
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/button_color"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_dates"
+                android:text="Date"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_scores"
+                android:text="Score"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_names"
+                android:text="Name"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_locations"
+                android:text="Location"
+
+                android:textSize="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_0"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_0"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+              />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_0"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_0"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"
+
+               />
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_1"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_1"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_1"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"
+                 />
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_2"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_2"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_2"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/row_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_3"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+
+                android:textColor="#000"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_3"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+             />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_3"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/row_05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_4"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+               />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_4"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_4"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_4"
+                android:layout_width="0dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces" />
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/row_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_5"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_5"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+             />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_5"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row_07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_6"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_6"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+              />
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_6"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/row_08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_7"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_7"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_7"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/row_09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_8"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+             />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_8"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                 />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_8"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_8"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"
+               />
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end|beginning">
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_date_9"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_score_9"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:id="@+id/fragment_TVW_name_9"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageButton
+
+                android:id="@+id/fragment_BTN_location_9"
+
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fce4ec">
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher_prison"
+
+        />
+
+    <EditText
+        android:id="@+id/menu_EDT_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+       android:inputType="textPersonName"
+
+
+        android:hint="Enter Your Name"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_next"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Primary"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_EDT_name"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/button_color"
+        android:paddingBottom="10dp"
+
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/menu_BTN_next"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/menu_EDT_name"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="200dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:background="#880e4f"-->
+<!--        android:text="Next"-->
+<!--        android:textColor="#F4F4F4"-->
+<!--        android:textSize="15sp" />-->
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/menu_BTN_sensors"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Primary"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/menu_BTN_next"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:backgroundTint="@color/button_color"
+
+        android:paddingBottom="10dp"
+
+        android:text="With Sensors"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_withoutSensors"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Primary"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/menu_BTN_sensors"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:backgroundTint="@color/button_color"
+
+        android:paddingBottom="10dp"
+
+        android:text="Without Sensors"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_high_scores"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Primary"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/menu_BTN_withoutSensors"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:backgroundTint="@color/button_color"
+
+        android:paddingBottom="10dp"
+
+        android:text="Top 10 "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

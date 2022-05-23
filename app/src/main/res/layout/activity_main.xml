@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activities.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="@color/white"
+
             android:orientation="horizontal">
 
             <ImageView
@@ -78,7 +78,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-
                 android:orientation="horizontal">
 
                 <ImageView
@@ -105,14 +104,6 @@
                     android:layout_weight="1"
                     android:background="#fce4ec" />
 
-            </LinearLayout>
-            <!--            second line in matrix-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal">
-
                 <ImageView
                     android:id="@+id/main_IMG_matrix_4"
                     android:layout_width="match_parent"
@@ -129,6 +120,14 @@
                     android:layout_weight="1"
                     android:background="#fce4ec" />
 
+
+            </LinearLayout>
+            <!--            second line in matrix-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/main_IMG_matrix_6"
                     android:layout_width="match_parent"
@@ -136,14 +135,6 @@
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:background="#fce4ec" />
-
-            </LinearLayout>
-            <!--            third line in matrix-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/main_IMG_matrix_7"
@@ -169,14 +160,6 @@
                     android:layout_weight="1"
                     android:background="#fce4ec" />
 
-            </LinearLayout>
-            <!--            fourth line in matrix-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal">
-
                 <ImageView
                     android:id="@+id/main_IMG_matrix_10"
                     android:layout_width="match_parent"
@@ -184,6 +167,14 @@
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:background="#fce4ec" />
+
+            </LinearLayout>
+            <!--            third line in matrix-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/main_IMG_matrix_11"
@@ -200,14 +191,6 @@
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:background="#fce4ec" />
-
-            </LinearLayout>
-            <!--            fifth line in matrix-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-
-                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/main_IMG_matrix_13"
@@ -234,6 +217,195 @@
                     android:background="#fce4ec" />
 
             </LinearLayout>
+            <!--            fourth line in matrix-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+            </LinearLayout>
+            <!--            fifth line in matrix-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+            </LinearLayout>
+            <!--sixth line in matrix-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_29"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_matrix_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#fce4ec" />
+
+            </LinearLayout>
+<!--            &lt;!&ndash;seventh line in matrix&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/main_IMG_matrix_31"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#fce4ec" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/main_IMG_matrix_32"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#fce4ec" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/main_IMG_matrix_33"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#fce4ec" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/main_IMG_matrix_34"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#fce4ec" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/main_IMG_matrix_35"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#fce4ec" />-->
+
+<!--            </LinearLayout>-->
 
         </LinearLayout>
 

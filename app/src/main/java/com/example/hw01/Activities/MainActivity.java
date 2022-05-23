@@ -1,13 +1,18 @@
-package com.example.hw01;
+/*package com.example.hw01.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.hw01.R;
+import com.example.hw01.player;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private player police;
     private player thief;
     private final int DELAY = 1000;
+    private SensorManager sensorManager;
+    private Sensor accSensor;
 
     private enum TIMER_STATUS {
         OFF,
@@ -36,12 +43,22 @@ public class MainActivity extends AppCompatActivity {
 
     private TIMER_STATUS timerStatus = TIMER_STATUS.OFF;
 
+
+
+
+
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         findViews();
         initButton();
+
         police = new player();
         thief = new player();
         startGame();
@@ -63,11 +80,16 @@ public class MainActivity extends AppCompatActivity {
         };
         //matrix for players
         main_IMG_matrix_view=new ImageView[][]{
-                {findViewById(R.id.main_IMG_matrix_1),findViewById(R.id.main_IMG_matrix_2),findViewById(R.id.main_IMG_matrix_3)},
-                {findViewById(R.id.main_IMG_matrix_4),findViewById(R.id.main_IMG_matrix_5),findViewById(R.id.main_IMG_matrix_6)},
-                {findViewById(R.id.main_IMG_matrix_7),findViewById(R.id.main_IMG_matrix_8),findViewById(R.id.main_IMG_matrix_9)},
-                {findViewById(R.id.main_IMG_matrix_10),findViewById(R.id.main_IMG_matrix_11),findViewById(R.id.main_IMG_matrix_12)},
-                {findViewById(R.id.main_IMG_matrix_13),findViewById(R.id.main_IMG_matrix_14),findViewById(R.id.main_IMG_matrix_15)}
+                {findViewById(R.id.main_IMG_matrix_1),findViewById(R.id.main_IMG_matrix_2),findViewById(R.id.main_IMG_matrix_3),findViewById(R.id.main_IMG_matrix_4),findViewById(R.id.main_IMG_matrix_5)},
+                {findViewById(R.id.main_IMG_matrix_6),findViewById(R.id.main_IMG_matrix_7),findViewById(R.id.main_IMG_matrix_8),findViewById(R.id.main_IMG_matrix_9), findViewById(R.id.main_IMG_matrix_10)},
+
+                {findViewById(R.id.main_IMG_matrix_11),findViewById(R.id.main_IMG_matrix_12), findViewById(R.id.main_IMG_matrix_13),findViewById(R.id.main_IMG_matrix_14),findViewById(R.id.main_IMG_matrix_15)},
+
+                {findViewById(R.id.main_IMG_matrix_16),findViewById(R.id.main_IMG_matrix_17),findViewById(R.id.main_IMG_matrix_18),findViewById(R.id.main_IMG_matrix_19),findViewById(R.id.main_IMG_matrix_20)},
+                {findViewById(R.id.main_IMG_matrix_21), findViewById(R.id.main_IMG_matrix_22),findViewById(R.id.main_IMG_matrix_23),findViewById(R.id.main_IMG_matrix_24),findViewById(R.id.main_IMG_matrix_25)},
+
+                {findViewById(R.id.main_IMG_matrix_26),findViewById(R.id.main_IMG_matrix_27),findViewById(R.id.main_IMG_matrix_28),findViewById(R.id.main_IMG_matrix_29),findViewById(R.id.main_IMG_matrix_30)}
+
         };
 
 
@@ -84,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
     private void startGame() {
         int startDirection = -1;
         int directionForPoliceInX = 0;
-        int directionForPoliceInY = 4;
-        int directionForThiefInX = 2;
+        int directionForPoliceInY = 5;
+        int directionForThiefInX = 4;
         int directionForThiefInY = 0;
         police.setDirection(startDirection);
         police.setCurrentDirectionInY(directionForPoliceInY);
@@ -93,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
         thief.setDirection(startDirection);
         thief.setCurrentDirectionInY(directionForThiefInY);
         thief.setCurrentDirectionInX(directionForThiefInX);
-//        police = new player(startDirection, directionForPoliceInX, directionForPoliceInY);
-//        thief = new player(startDirection, directionForThiefInX, directionForThiefInY);
         updateUI(directionForPoliceInX,directionForPoliceInY,R.drawable.img_police);
         updateUI(directionForThiefInX,directionForThiefInY,R.drawable.img_thief);
 
@@ -122,14 +142,9 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             updateThePolice();
+
         }
 
-//       if(police.getCurrentDirectionInX()==thief.getCurrentDirectionInX()&&police.getCurrentDirectionInY()==thief.getCurrentDirectionInY()){
-//           updateUI(police.getCurrentDirectionInX(),police.getCurrentDirectionInY(),0);
-//           updateUI(thief.getCurrentDirectionInX(),thief.getCurrentDirectionInY(),0);
-//            lives--;
-//            updateLifeUI();
-//            startGame();
     }
 
     /*
@@ -139,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
     up-2
     down-3
      */
+/*
     private void MoveForThief(){
         int tempDirectionPolice = -1;
         int currentDirectionInX = thief.getCurrentDirectionInX();
@@ -158,31 +174,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-/*
- private void MoveForPolice() {
-       int tempDirectionPolice=-1;
-       int currentDirectionInX;
-       int currentDirectionInY;
-       currentDirectionInX=police.getCurrentDirectionInX();
-       currentDirectionInY=police.getCurrentDirectionInY();
-       while(tempDirectionPolice==-1) {
-           int randomDirectionForPolice = (int) Math.floor(Math.random() * 4);
-           tempDirectionPolice = checkIfCanMove(randomDirectionForPolice, police.getCurrentDirectionInX(), police.getCurrentDirectionInY());
-       }
 
-       if(tempDirectionPolice==0||tempDirectionPolice==1){
-           main_IMG_matrix_view[police.getCurrentDirectionInY()][police.getCurrentDirectionInX()].setVisibility(View.INVISIBLE);
-           police.setCurrentDirectionInX(updateIndex(tempDirectionPolice,currentDirectionInX));
-       }
-       else {
-           main_IMG_matrix_view[police.getCurrentDirectionInY()][police.getCurrentDirectionInX()].setVisibility(View.INVISIBLE);
-           police.setCurrentDirectionInY(updateIndex(tempDirectionPolice,currentDirectionInY));
-       }
-       updateUI(police.getCurrentDirectionInX(),police.getCurrentDirectionInY(),R.drawable.img_police);
-
-
-   }
- */
 
 
 private void updateThePolice(){
@@ -211,30 +203,7 @@ private void MoveForPolice(int direction){
 
 
 
- /*   private void MoveForThief(int direction) {
-        int tempDirectionThief;
 
-        if(direction!=-1){
-            tempDirectionThief=checkIfCanMove(direction, thief.getCurrentDirectionInX(), thief.getCurrentDirectionInY());
-
-            if(tempDirectionThief!=-1){
-                thief.setDirection(tempDirectionThief);
-               main_IMG_matrix_view[thief.getCurrentDirectionInY()][thief.getCurrentDirectionInX()].setVisibility(View.INVISIBLE);
-                if(tempDirectionThief==0||tempDirectionThief==1){
-                    thief.setCurrentDirectionInX(updateIndex(tempDirectionThief,thief.getCurrentDirectionInX()));
-                }
-                else {
-                    thief.setCurrentDirectionInY(updateIndex(tempDirectionThief,thief.getCurrentDirectionInY()));
-                }
-
-
-
-            }
-            updateUI(thief.getCurrentDirectionInX(),thief.getCurrentDirectionInY(),R.drawable.img_thief);
-        }
-    }
-
-  */
 
    private int updateIndex(int direction,int currentDirection){
        if(direction==0 ) {
@@ -375,4 +344,4 @@ private void MoveForPolice(int direction){
     }
 
 
-}
+}*/

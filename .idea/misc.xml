@@ -12,7 +12,17 @@
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/drawable/ic_right.xml" value="0.1" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/drawable/ic_theif.xml" value="0.1" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/drawable/ic_up.xml" value="0.1" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_game_over.xml" value="0.22" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_map.xml" value="0.1" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_top_10.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/activity_view_for_top10.xml" value="0.22" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/fragment_map.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/layout/fragment_top_10.xml" value="0.3705263157894737" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/HW01/app/src/main/res/mipmap-anydpi-v26/ic_prison.xml" value="0.125" />
       </map>
     </option>
   </component>
